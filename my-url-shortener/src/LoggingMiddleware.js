@@ -9,7 +9,7 @@ export const axiosInstance = axios.create({
 axiosInstance.interceptors.request.use(
   (request) => {
     console.info(
-      `[Request] ${request.method.toUpperCase()} ${reaquest.url}`,
+      `[Request] ${request.method.toUpperCase()} ${request.url}`,
       request.data || ''
     );
     return request;
